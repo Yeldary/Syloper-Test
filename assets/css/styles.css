@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+	z-index: 999;
+}
+
+.icon:hover {
+	transform: scale(1.2);
+	border-radius: 20px;
+}
+
+.urbanized {
+	margin-top: -8rem;
+}
+
+#tw:hover {
+	transform: scale(2);
+}
+
+#fb:hover {
+	transform: scale(2);
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #AB1415;
+	color: white;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+.prop:hover {
+	opacity: 0.8;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #AB1415;
+	color: white;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+.texto-central {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+
+.buscar-btn {
+	width: 560px;
+	color: white;
+	border-radius: 0;
+	background-color: #AB1415;
+	border-color: #AB1415;
+	font-size: 14px;
+}
+
+.enviar-btn {
+	color: white;
+	border-radius: 0;
+	background-color: #AB1415;
+	border-color: #AB1415;
+	font-size: 14px;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.enviar-btn:hover {
+	color: lightgrey;
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+	.navbar {
+		font-size: 12px;
+	}
+	.img-hero-mobile {
+		height: 650px;
+		margin-top: -8rem;
+	}
+	.texto-central {
+		top: 16rem;
+		left: 0;
+	}
+	.titulo {
+		font-size: 20px;
+	}
+	.buscar-btn {
+		width: 280px;
+		margin-left: 1rem;
+	}
+	.map-iframe {
+		width: 330px;
+	}
+}

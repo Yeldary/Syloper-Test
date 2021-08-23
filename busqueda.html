@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/ZZ Blanco Verti.png">
+    <title>Busca tu propiedad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/ZZ Edit Logo-01.png" alt="#" width="180" height="95" class="ms-5" />
+            </a>
+            <button class="navbar-toggler small" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-uppercase">
+                    <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold :hover link-danger" href="/busqueda.html">Propiedades</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold link-danger :hover"
+                            href="/vistaIndividual.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ps-5 icon">
+                        <a href="https://web.whatsapp.com" target="#" class="ms-auto ps-5">
+                            <img src="/assets/img/WSPV.png" alt="whatsapp" height="30px" class="ps-5 "></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/navbar-->
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-md-6 position">
+                <h2 class="text-uppercase text-danger fw-bold display-6 pb-5">propiedades en venta</h2>
+            </div>
+        </div>
+    </div>
+    <!--Searching filters-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+                <p class="text-uppercase fw-bold">búsqueda avanzada</p>
+                <div class="d-grid gap-2 mb-3">
+                    <a class="btn btn-filtros p-4 text-uppercase fw-bold" data-bs-toggle="collapse"
+                        href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+                        id="filterpop">
+                        filtros
+                    </a>
+                </div>
+                <div class="collapse " aria-expanded="true" id="collapseExample">
+                    <div class="card-body px-0">
+                        <p class="text-uppercase fw-bold">precios</p>
+                        <div class="form-check form-check-inline row-md-4 pb-1">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label text-muted" for="inlineRadio1">$</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label text-uppercase text-muted" for="inlineRadio2">us$</label>
+                            </div>
+                        </div>
+                        <div class="container px-0">
+                            <div class="row pb-3">
+                                <div class="col-md-5 ps-2">
+                                    <input class="form-control mb-3" type="text" placeholder="Desde $"
+                                        aria-label=".form-control-sm example">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control mb-3" type="text" placeholder="Hasta $"
+                                        aria-label=".form-control-sm example">
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-aplicar text-uppercase fw-bold p-2"
+                                        id="filterAply">aplicar</button>
+                                </div>
+                                <div>
+                                    <p class="mt-3 ps-3 fw-bold text-uppercase">dormitorios</p>
+                                    <div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">
+                                                    Monoambiente</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">1
+                                                    Dormitorio</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">2
+                                                    Dormitorios</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">3
+                                                    Dormitorios</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">4
+                                                    Dormitorios</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">5
+                                                    Dormitorios</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-3">
+                                        <ul class="ms-2 list-unstyled">
+                                            <li class="ms-2 pb-2 text-uppercase fw-bold">tipo</i>
+                                            <li class="ms-2 text-muted">Rosario | Centro</i>
+                                            <li class="ms-2 pt-2 text-uppercase fw-bold">localidad</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="nav-link text-muted" href="#">Terreno</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" aria-current="#"
+                                                    href="#">Departamento</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link text-muted" aria-current="#">Casa</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-block d-md-none">
+                <p class="text-uppercase fw-bold">búsqueda avanzada</p>
+                <div class="d-grid gap-2 mb-3">
+                    <a class="btn btn-filtros p-4 text-uppercase fw-bold" data-bs-toggle="collapse"
+                        href="#collapse-mobile" role="button" aria-expanded="false" aria-controls="collapse-mobile"
+                        id="filterpop">
+                        filtros
+                    </a>
+                </div>
+                <div class="collapse" aria-expanded="true" id="collapse-mobile">
+                    <div class="row">
+                        <div class="col-3">
+                            <p class="small fw-bold text-uppercase">Precios</p>
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control mb-3" type="text" placeholder="Desde $"
+                                aria-label=".form-control-sm example">
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control mb-3" type="text" placeholder="Hasta $"
+                                aria-label=".form-control-sm example">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-check form-check-inline pb-1">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label text-muted" for="inlineRadio1">$</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label text-uppercase text-muted"
+                                        for="inlineRadio2">us$</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mb-3">
+                            <button type="submit" class="btn btn-aplicar text-uppercase fw-bold p-2"
+                                id="filterAply">aplicar</button>
+                        </div>
+                        <!-- Dormitorios -->
+                        <div class="col-12 text-center">
+                            <button type="submit"
+                                class="btn btn-filtros-mobile text-uppercase fw-bold p-2 px-3">Dormitorios</button>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">Monoambiente</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">1 Dormitorio</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">2 Dormitorios</button>
+                                </div>
+                                <!-- fila arriba -->
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">3 Dormitorios</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">4 Dormitorio</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">5 Dormitorios</button>
+                                </div>
+                            </div>
+                            <!-- fila abajo-->
+                        </div>
+                        <!-- Localidad-->
+                        <div class="col-12 text-center">
+                            <button type="submit"
+                                class="btn btn-filtros-mobile text-uppercase fw-bold p-2 px-4">Localidad</button>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2 px-4  ">Rosario</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2 px-4 ">Centro</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2 px-4  ">Zona Sur</button>
+                                </div>
+                                <!-- fila arriba -->
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2">Zona Norte</button>
+                                </div>
+                            </div>
+                            <!-- fila abajo-->
+                        </div>
+                        <!-- Tipo -->
+                        <div class="col-12 text-center">
+                            <button type="submit"
+                                class="btn btn-filtros-mobile text-uppercase fw-bold p-2 px-5">Tipo</button>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2 px-4">Terreno</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2 px-4">Casa</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-secondary btn-dormitorios py-2   ">Departamento</button>
+                                </div>
+                                <!-- fila arriba -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Searching filters-->
+            <!--Properties exposed-->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <!--Primer fila imágenes-->
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <!-- Segunda fila imágenes-->
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid ps-2" src="/assets/img/Propiedades Destac.png" alt="propiedad1">
+                        <p class="text-muted fw-light ps-2 pt-2">Salta 5000 - 01 01 - 1 Dormitorio
+                            <br>
+                            Santa Fe | Rosario | Centro
+                            <hr>
+                        </p>
+                        <p class="small text-muted fw-light">Venta u$s 120.000 | <i class="fas fa-home"></i> 64.00 M2 <a href="/vistaIndividual.html" ><i
+                                class="fas fa-search text-danger float-end"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Properties exposed-->
+    <!--footer -->
+    <footer class="text-center text-md-left mt-5 text-light" style="background-color:#333535;">
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/assets/img/ZZ Blanco Verti.png" alt="footer" height="60" class="mt-5">
+                </div>
+                <div class="col-md-2">
+                    <p class="fw-bold text-uppercase text-start fs-6 ">contacto</p>
+                    <hr>
+                    <ul class="list-unstyled text-start fs-6 lh-sm fw-light ">
+                        <li>(0341)3411621341</li>
+                        <li>Dorrego 1000, Piso 1</li>
+                        <li>Rosario, Santa Fe</li>
+                        <li>info@syloper.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto text-start">
+                    <p class="fw-bold text-uppercase text-start fs-6">seguinos</p>
+                    <hr>
+                    <img src="/assets/img/TW.png" alt="Twitter" href="#" height="30" class="mt-1 pe-1" id="tw">
+                    <img src="/assets/img/FB.png" alt="Facebook" href="#" height="30" class="mt-1" id="fb">
+                </div>
+                <div class="col-md-2 mx-auto">
+                    <p class="fw-bold text-uppercase text-start lh-sm">menú</p>
+                    <hr>
+                    <ul class="list-unstyled text-start fs-6lh-1">
+                        <li>
+                            <a class="footer-link text-light text-uppercase text-decoration-none fw-light "
+                                href="/index.html">home</a>
+                            <br>
+                            <a class="footer-link text-light text-uppercase text-decoration-none fw-light"
+                                href="/busqueda.html">propiedades</a>
+                            <p class="text-uppercase fw-light">contacto</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+    <button onclick="topFunction()" id="myBtn" title="ir hacia arriba">
+        <i class="fas fa-angle-up"></i></button>
+      <script>
+    mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
